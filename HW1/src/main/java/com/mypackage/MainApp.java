@@ -28,6 +28,7 @@ public class MainApp {
         int result = 0;
 
         switch (choice) {
+            
             case 1:
                 result = Addition.add(a, b);
                 break;
@@ -42,12 +43,12 @@ public class MainApp {
                 break;
             default:
                 System.out.println("Неверный выбор операции.");
+
         }
 
-        // Декорируем и выводим результат
         System.out.println(Decorator.decorate(result));
 
-        // Закрываем Scanner после использования
         scanner.close();
+
     }
 }
